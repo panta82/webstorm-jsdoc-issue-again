@@ -4,6 +4,8 @@ class ClassInSameFile {
   constructor() {
     this.y = 5;
   }
+  
+  methodY() {}
 }
 
 /**
@@ -12,5 +14,7 @@ class ClassInSameFile {
  */
 function main(test1, test2) {
   console.log(test1.x);
+  console.log(test1.methodX());
   console.log(test2.y);
+  console.log(test2.methodY());
 }
